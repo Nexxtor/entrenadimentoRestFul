@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1 Como pasar web
+  h2 Ggg IZI
+  .errors
+  form(action="#", method="post" name="userForm")
+    label(for="username") Username
+    input#username(type="text" name="usename")
+    label(for="name") name
+    input#name(type="text" name="name")
+    label(for="lastname") Lastname
+    input#lastname(type="text" name="lastname")
+    input(type="submit", value="Enviar")
+  table
+    thead
+      tr  
+        th ID
+        th Username
+        th Name
+        th Lastname
+        th options
+    tbody.listUsers
+  script(src="/javascripts/main.js")
